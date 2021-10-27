@@ -1,0 +1,65 @@
+{
+  "givenEvent": {
+    "request": {
+      "userAttributes": {
+        "custom:customer_id": "2074834",
+        "sub": "bc73af20-6f67-416b-8530-f49289b6bec0",
+        "cognito:email_alias": "and.test.pomelo@gmail.com",
+        "cognito:user_status": "FORCE_CHANGE_PASSWORD",
+        "email_verified": "true",
+        "phone_number_verified": "false",
+        "custom:migrated_user": "true",
+        "custom:firebase_uid": "qc0MvKMjUuVPIMzUq5eTUrehuEE2",
+        "given_name": "tester",
+        "custom:custom_auth_verified": "true",
+        "custom:latest_login_method": "SRP_A",
+        "family_name": "pomelo",
+        "email": "test@gmail.com"
+      }
+    }
+  },
+  "SRPALoginResponseEvent": {
+    "request": {
+      "userAttributes": {
+        "custom:customer_id": "2074834",
+        "sub": "bc73af20-6f67-416b-8530-f49289b6bec0",
+        "cognito:email_alias": "test@gmail.com",
+        "cognito:user_status": "FORCE_CHANGE_PASSWORD",
+        "email_verified": "true",
+        "phone_number_verified": "false",
+        "custom:migrated_user": "true",
+        "custom:firebase_uid": "qc0MvKMjUuVPIMzUq5eTUrehuEE2",
+        "given_name": "tester",
+        "custom:custom_auth_verified": "true",
+        "custom:latest_login_method": "SRP_A",
+        "family_name": "pomelo",
+        "email": "test@gmail.com"
+      }
+    }
+  },
+  "phoneLoginWithOTPResponseEvent": {
+    "request": {
+      "userAttributes": {
+        "sub": "d007bcfc-c535-410e-9ac0-aa3f562043a8",
+        "cognito:email_alias": "Test@hotmail.com",
+        "cognito:user_status": "CONFIRMED",
+        "email_verified": "true",
+        "custom:custom_auth_verified": "true",
+        "custom:latest_login_method": "CUSTOM_CHALLENGE",
+        "phone_number_verified": "true",
+        "cognito:phone_number_alias": "+660955600000",
+        "phone_number": "+660955600000",
+        "given_name": "TestLogin",
+        "family_name": "Pomelo",
+        "email": "Test@hotmail.com"
+      },
+      "session": [
+        {
+          "challengeName": "CUSTOM_CHALLENGE",
+          "challengeResult": true,
+          "challengeMetadata": "CODE-119984"
+        }
+      ]
+    }
+  }
+}
