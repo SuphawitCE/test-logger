@@ -1,24 +1,12 @@
 const Logger = require("@pomelofashion/node-pmlo-logger");
+const { SRPALoginResponseEvent } = require("./fixtures/mockEventPayload.json");
+const { SRPALogin } = require("./utils/SRPALogin");
 
-const phoneLoginWithOTPResponseEvent = {
-  request: {
-    userAttributes: {
-      phone_number: "062342123",
-      user_name: "testLogger",
-    },
-  },
-};
-
-const sensitiveKeys = [
-  "user_name",
-  "*.user_name",
-  "phoneLoginWithOTPResponseEvent.request.userAttributes.phone_number",
-  "phoneLoginWithOTPResponseEvent.request.userAttributes.user_name",
-];
+const sensitiveKeys = [...SRPALogin];
 
 const logger = Logger.createLogger({
   level: "debug",
   redactKeys: sensitiveKeys,
 });
 
-logger.info({ phoneLoginWithOTPResponseEvent });
+logger.info({ SRPALoginResponseEvent });
