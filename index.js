@@ -12,6 +12,7 @@ const phoneLoginWithOTPResponseEvent = {
 const sensitiveKeys = [
   "user_name",
   "*.user_name",
+  "phoneLoginWithOTPResponseEvent.request.userAttributes.phone_number",
   "phoneLoginWithOTPResponseEvent.request.userAttributes.user_name",
 ];
 
