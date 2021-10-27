@@ -1,0 +1,20 @@
+---
+name: DataDog Metrics
+
+on:
+  workflow_run:
+    workflows:
+      - '**'
+    types:
+      - completed
+
+jobs:
+  submit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: int128/datadog-actions-metrics@v1
+        with:
+          github-token: ${{ secrets.GH_TOKEN }}
+          datadog-api-key: ${{ secrets.DD_API_KEY }}
+          collect-job-metrics: true
