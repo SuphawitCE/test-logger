@@ -1,4 +1,3 @@
-// const { SRPALoginResponseEvent } = require("../fixtures/mockEventPayload.json");
 exports.SRPALogin = [
   'SRPALoginResponseEvent.request.userAttributes["custom:customer_id"]',
   'SRPALoginResponseEvent.request.userAttributes["cognito:email_alias"]',
