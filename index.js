@@ -3,7 +3,7 @@ const {
   SRPALoginResponseEvent,
   phoneLoginWithOTPResponseEvent,
 } = require("./fixtures/mockEventPayload.json");
-const { SRPALogin, PhoneLogin } = require("./utils/SRPALogin");
+const { SRPALogin, PhoneLogin } = require("./utils");
 
 const sensitiveKeys = [...SRPALogin, ...PhoneLogin];
 
