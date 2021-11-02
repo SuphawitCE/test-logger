@@ -61,5 +61,30 @@
         }
       ]
     }
+  },
+  "firebaseUser-response": {
+    "uid": "AlCWjofsplYRQtFer31mg29o3v23",
+    "email": "test@gmail.com",
+    "emailVerified": true,
+    "displayName": "TestName",
+    "photoURL": "https://lh3.googleusercontent.com/a-/AOh14Giv7kOgU5imBoN6JgkYYxELZDvfyxCmfqx8HSsW=s96-c",
+    "disabled": false,
+    "metadata": {
+      "lastSignInTime": "Thu, 28 Oct 2021 10:48:21 GMT",
+      "creationTime": "Thu, 21 Oct 2021 05:51:17 GMT"
+    },
+    "customClaims": {
+      "cid": 2074852
+    },
+    "tokensValidAfterTime": "Thu, 28 Oct 2021 10:48:21 GMT",
+    "providerData": [
+      {
+        "uid": "117296683679712594857",
+        "displayName": "TestName",
+        "email": "test@gmail.com",
+        "photoURL": "https://lh3.googleusercontent.com/a-/AOh14Giv7kOgU5imBoN6JgkYYxELZDvfyxCmfqx8HSsW=s96-c",
+        "providerId": "google.com"
+      }
+    ]
   }
 }

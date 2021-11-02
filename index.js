@@ -3,13 +3,13 @@ const {
   SRPALoginResponseEvent,
   phoneLoginWithOTPResponseEvent,
 } = require("./fixtures/mockEventPayload.json");
-const { SRPALogin, PhoneLogin } = require("./utils");
+const { cognitoKeys } = require("./utils");
 
-const sensitiveKeys = [...SRPALogin, ...PhoneLogin];
+const sensitiveKeys = [...cognitoKeys];
 
-console.log("SRPA: ", SRPALogin);
+// console.log("SRPA: ", SRPALogin);
 
-console.log("Phone: ", PhoneLogin);
+// console.log("Phone: ", PhoneLogin);
 const logger = Logger.createLogger({
   level: "debug",
   redactKeys: sensitiveKeys,
