@@ -17,6 +17,7 @@
 //   "*.request.userAttributes.family_name",
 //   "*.request.userAttributes.email",
 // ];
+
 exports.cognitoKeys = [
   '*.request.userAttributes["custom:customer_id"]',
   '*.request.userAttributes["cognito:email_alias"]',
@@ -31,8 +32,8 @@ exports.cognitoKeys = [
   "*.domain",
   "*.displayName",
   "*.photoURL",
-  "*.providerData[*].uid",
-  "*.providerData[*].displayName",
-  "*.providerData[*].email",
-  "*.providerData[*].photoURL",
+  "firebaseUserResponse.providerData[*].uid",
+  "firebaseUserResponse.providerData[*].displayName",
+  "firebaseUserResponse.providerData[*].email",
+  "firebaseUserResponse.providerData[*].photoURL",
 ];

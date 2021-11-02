@@ -2,6 +2,7 @@ const Logger = require("@pomelofashion/node-pmlo-logger");
 const {
   SRPALoginResponseEvent,
   phoneLoginWithOTPResponseEvent,
+  firebaseUserResponse,
 } = require("./fixtures/mockEventPayload.json");
 const { cognitoKeys } = require("./utils");
 
@@ -18,4 +19,5 @@ const logger = Logger.createLogger({
 logger.info({
   SRPALoginResponseEvent,
   phoneLoginWithOTPResponseEvent,
+  firebaseUserResponse,
 });

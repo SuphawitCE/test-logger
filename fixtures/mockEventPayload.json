@@ -62,7 +62,7 @@
       ]
     }
   },
-  "firebaseUser-response": {
+  "firebaseUserResponse": {
     "uid": "AlCWjofsplYRQtFer31mg29o3v23",
     "email": "test@gmail.com",
     "emailVerified": true,
